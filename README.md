@@ -12,8 +12,8 @@ WBAI (Whole Brain Architecture Initiative) Aphaisa Handson which will held at 17
 アーキテクチャの解明と完成に向けた一里塚となると考えます。
 
 <center>
-![](./assets/1885LichtheimFig2.jpg){style="width:34%"}
-![](./assets/1989SMFig1.jpg){style="width:24%"}
+![](./1885LichtheimFig2.jpg){style="width:34%"}
+![](./1989SMFig1.jpg){style="width:24%"}
 
 左図{@Seidenberg1989}, 右図{@1885Lichtheim}
 </center>
