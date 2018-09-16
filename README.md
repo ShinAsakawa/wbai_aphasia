@@ -11,8 +11,8 @@ WBAI (Whole Brain Architecture Initiative) Aphaisa Handson which will held at 17
 再現することを目指します。進化上，他の種には存在しないという意味で人間にしか持ち得なかった言語機能に光を当てることにより全脳
 アーキテクチャの解明と完成に向けた一里塚となると考えます。
 
-<img src='./1885LichtheimFig2.jpg' align='center' width='34%' src='./1989SMFig1.jpg' align='center' width='24%'>
-左図 Lichtheim(1885), 右図 (Seidenberg et al(1989), 
+<img src='./1989SMFig1.jpg' align='center' width='34%'>
+<div align='center'>図 Seidenberg et al (1989)</div>
 
 本ハッカソンではニューラルネットワークによって構成された訓練済みの読字モデルを健常者の脳と捉えます。このモデルを部分的に破壊
 することで上記３種類の失読症のタイプ，音韻失読，表層失読，深層失読を再現することを目指します。
