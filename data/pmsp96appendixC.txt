@@ -1,0 +1,65 @@
+# Regularizations of Taraban and McClelland's (1987) Exception Words
+
+High-frequency exceptions
+Word Correct Regularization(s)
+-------------------------------
+ARE    /at/   /At/
+BOTH   /bOT/  /boT/
+BREAK  /brAk/ /brEk/
+CHOOSE /CUz/  /CUs/
+COME   /k^m/  /kOm/
+DO     /dU/   /dO/,/da/
+DOES   /dAz/  /dOz/,/dOs/
+DONE   /d^n/  /dOn/
+FOOT   /flit/ /rUt/
+GIVE   /giv/  /glv/
+GREAT  /grAt/ /grEt/
+HAVE   /hay/  /hAy/
+MOVE   /mUv/  /mOv/
+PULL   /pul/  /pAl/
+PUT    /put/  /pAt/
+SAID   /sed/  /sAd/
+SAYS   /sez/  /sAz/,/sAs/
+SHALL  /Sa]/  /Sol/
+WANT   /want/ /w@nt/
+WATCH  /waC/  /w@C/
+WERE   /wur/  /wEt/
+WHAT   /W^t/  /w@t/
+WORD   /wurd/ /wOrd/
+WORK   /wurk/ /wOrk/
+
+
+Low-frequency exceptions
+Word Correct Regularization(s)
+------------------------------
+BOWL   /bOl/   /bWl/
+BROAD  /brod/  /brOd/
+BUSH   /buS/   /b^S/
+DEAF   /def/   /dEf/
+DOLL   /dal/   /dOi/
+FLOOD  /fl^d/  /flUd/,/flud/
+GROSS  /grOs/  /gros/,/gras/
+LOSE   /lUz/   /IOs/,/lOz/
+PEAR   /pAr/   /pEr/
+PHASE  /fAz/   /fAs/
+PINT   /pInt/  /pint/
+PLOW   /plW/   /plO/
+ROUSE  /rWz/   /rWs/
+SEW    /sO/    /sU/
+SHOE   /SU/    /SO/
+SPOOK  /spUk/  /spuk/
+SWAMP  /swamp/ /sw@mp/
+SWARM  /swOrm/ /swarnl/
+TOUCH  /t^C/   /tWC/
+WAD    /wad/   /w@d/
+WAND   /wand/  /w@nd/
+WASH   /woS/   /w@S/
+WOOL   /wul/   /wUl/
+WORM   /wurm/  /wOrm/
+
+
+# Note. /a/ in POT, /@/ in CAT, /e/ in BED, /i/ in HIT, /o/ in DOO, /u/in GOOD,
+# /A/ in MAKE, /E/ in KEEP, /I/ in mKE, /O/ in HOPE, /U/ in BOOT, /W/ in NOw,
+# /Y/ in BOY, /A/ in CUP, /N/ in RINO, /S/in SHE, /C/ in CHIN, /Z/ in BEIGE,
+# /T/ in THIN, /D/ in THIS.
+# All other phonemes arc represented in the conventional way (e.g.,/b/ in BAT).

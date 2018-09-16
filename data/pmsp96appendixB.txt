@@ -1,0 +1,103 @@
+# Accepted Pronunciations of Glushko's (1979) Nonwords
+
+Consistent nonwords
+Nonword Pronunciation(s)
+-------------------------
+BEED poEd/
+BELD /beld/
+BINK foiNk/
+BLEAM /blEm/
+BORT floOrt/
+BROBE forOb/
+CATH /k@T/,/kaT/
+COBE /kOb/
+DOLD /dOld/,/dald/
+IX)ON /dUn/
+DORE /dOr/
+DREED /driEd/
+FEAL /rE1/
+GODE ]gOd/
+GROOL /grUl/,/grul/
+BEAN /hEn/
+BEEF /hEf/
+HODE /hOd/
+HOIL /hYl/
+LAIL /IAI/
+LOLE /IO1/
+MEAK /mAk/,/mEk/
+MOOP /mUp/
+MUNE /mUn/,/myUn/
+NUST /nAst/
+PEET /pEt/
+PILT /pilt/
+PLORE /plOr/
+PODE /pOd/
+POLD /pOld/,/pald/
+PRAIN /prAn/
+SHEED /SEd/
+SOAD /sOd/,/sod/
+SPEET /spEt/
+STEET /stEt/
+SUFF /s A f/
+SUST /sAst/
+SWEAL /swEl/
+TAZE /tAz/
+WEAT /wAt/,/wEt/,/wet/
+WOSH /waS/
+WOTE /wOt/
+WUFF /wAf/
+
+
+Inconsistent nonwords
+Nonword Pronunciation(s)
+------------------------
+BILD /blld/,/bild/
+BINT folnt/,/bint/
+BLEAD folEd/,bled/
+BOOD /bUd/,/bAd/,/bud/
+BOST foOst/,foAst/,/bost]
+BROVE forOv/,forUv/,for A v/
+COSE /kOs/,/kOz/,/kUz/
+COTH /kOT/,/koT/
+DERE /dAr/,/dEr/,/dur/
+DOMB /dOm/,/dUm/,/dam/,/damb/
+DOOT /dUt/,/dut/
+DROOD /drUd/,/drAd/,/drud/
+FEAD /fEd/,/fed/
+GOME /gOm/,/gAm/
+GROOK /grUk/,/gruk/
+HAID /h@d/,/hAd/,/hcd/
+HEAF /hEf/,/hef/
+HEEN /hEn/,/hin/
+HOVE /hOv/,/hOv/,/h A v/
+LOME /lOm/,/1Am/
+LOOL /IU1/,/Iul/
+MEAR /mAr/,/mEr/
+MONE /mOn/,/m A n/,/mon/
+MOOF /mUf/,/muf/
+NUSH /nAS/,/nuS/
+PILD /pIld/,/pild/
+PLOVE /plOv/,/plUv/,/plAv/
+POMB /pOm/,/pUm/,/pam/,/pamb/
+POOT IpUt/,/put/
+POVE /pOv/,/pUv/,/pAv/
+PRAID /pr@d/,/prAd/,/pred/
+SHEAD /SEd/,/Sed/
+SOOD /sOd/,/sAd/,/sud/
+SOST /sOst/,/sAst/,/SOSt/
+SPEAT /spAt/,/spEt/,/spet/
+STEAT /stAt/,/stEt/,/stet/
+SOLL /sA1/,/sul/
+SWEAK /swAk/,/swEk/
+TAVE /t@v/,/tAv/,/tav/
+WEAD /wEd/,/wed/
+WONE /wOn/,/wAn/,/won/
+WULL /w A l/,/wul/
+WUSH /wAS/,/wuS/
+
+# Note. /a/ in POT, /@/ in CAT, /e/ in BED, /i/ in HIT, /o/ in DOO, /u/in GOOD,
+# /A/ in MAKE, /E/ in KEEP, /I/ in mKE, /O/ in HOPE, /U/ in BOOT, /W/ in NOw,
+# /Y/ in BOY, /A/ in CUP, /N/ in RINO, /S/in SHE, /C/ in CHIN, /Z/ in BEIGE,
+# /T/ in THIN, /D/ in THIS.
+# All other phonemes arc represented in the conventional way (e.g.,/b/ in BAT).
+

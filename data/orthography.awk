@@ -1,0 +1,125 @@
+#!/usr/bin/awk -f
+
+/^#/{
+	print;
+}
+!/^#/{
+    for (i=1; i<=NF; i++) {
+	if($i > 0.9 ) {
+	     printf("%s(%d) ",ortho[i], i);
+        }
+    }
+    printf("\n");
+}
+
+BEGIN{
+# ortho[1]-ortho[30] : onset
+# ortho[31]-ortho[57] : vowel
+# ortho[58]-ortho[105] : coda
+ortho[1]="Y";
+ortho[2]="S";
+ortho[3]="P";
+ortho[4]="T";
+ortho[5]="K";
+ortho[6]="Q";
+ortho[7]="C";
+ortho[8]="B";
+ortho[9]="D";
+ortho[10]="G";
+ortho[11]="F";
+ortho[12]="V";
+ortho[13]="J";
+ortho[14]="Z";
+ortho[15]="L";
+ortho[16]="M";
+ortho[17]="N";
+ortho[18]="R";
+ortho[19]="W";
+ortho[20]="H";
+ortho[21]="CH";
+ortho[22]="GH";
+ortho[23]="GN";
+ortho[24]="PH";
+ortho[25]="PS";
+ortho[26]="RH";
+ortho[27]="SH";
+ortho[28]="TH";
+ortho[29]="TS";
+ortho[30]="WH";
+ortho[31]="E";
+ortho[32]="I";
+ortho[33]="O";
+ortho[34]="U";
+ortho[35]="A";
+ortho[36]="Y";
+ortho[37]="AI";
+ortho[38]="AU";
+ortho[39]="AW";
+ortho[40]="AY";
+ortho[41]="EA";
+ortho[42]="EE";
+ortho[43]="EI";
+ortho[44]="EU";
+ortho[45]="EW";
+ortho[46]="EY";
+ortho[47]="IE";
+ortho[48]="OA";
+ortho[49]="OE";
+ortho[50]="OI";
+ortho[51]="OO";
+ortho[52]="OU";
+ortho[53]="OW";
+ortho[54]="OY";
+ortho[55]="UE";
+ortho[56]="UI";
+ortho[57]="UY";
+ortho[58]="H";
+ortho[59]="R";
+ortho[60]="L";
+ortho[61]="M";
+ortho[62]="N";
+ortho[63]="B";
+ortho[64]="D";
+ortho[65]="G";
+ortho[66]="C";
+ortho[67]="X";
+ortho[68]="F";
+ortho[69]="V";
+ortho[70]="J";
+ortho[71]="S";
+ortho[72]="Z";
+ortho[73]="P";
+ortho[74]="T";
+ortho[75]="K";
+ortho[76]="Q";
+ortho[77]="BB";
+ortho[78]="CH";
+ortho[79]="CK";
+ortho[80]="DD";
+ortho[81]="DG";
+ortho[82]="FF";
+ortho[83]="GG";
+ortho[84]="GH";
+ortho[85]="GN";
+ortho[86]="KS";
+ortho[87]="LL";
+ortho[88]="NG";
+ortho[89]="NN";
+ortho[90]="PH";
+ortho[91]="PP";
+ortho[92]="PS";
+ortho[93]="RR";
+ortho[94]="SH";
+ortho[95]="SL";
+ortho[96]="SS";
+ortho[97]="TCH";
+ortho[98]="TH";
+ortho[99]="TS";
+ortho[100]="TT";
+ortho[101]="ZZ";
+ortho[102]="U";
+ortho[103]="E";
+ortho[104]="ES";
+ortho[105]="ED";
+}
+
