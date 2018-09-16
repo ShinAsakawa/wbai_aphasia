@@ -1,7 +1,8 @@
-from setuptools import setup
+from distutils.core import setup
 
 setup(name='wbai_aphasia',
       version='0.0.1',
+      packages=['wbai_aphasia'],
       description='WBAI Aphasia handoson',
       author='Shin Asakawa',
       author_email='asakawa@ieee.org',
