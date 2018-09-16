@@ -1,4 +1,6 @@
 # wbai_aphasia
+![WBA失語症ハンズオン「ことばの障害と脳」募集案内](https://wba-initiative.org/3163/)
+
 WBAI (Whole Brain Architecture Initiative) Aphaisa Handson which will held at 17/Sep/2018
 
 # 概要
@@ -11,7 +13,7 @@ WBAI (Whole Brain Architecture Initiative) Aphaisa Handson which will held at 17
 再現することを目指します。進化上，他の種には存在しないという意味で人間にしか持ち得なかった言語機能に光を当てることにより全脳
 アーキテクチャの解明と完成に向けた一里塚となると考えます。
 
-<img src='./1989SMFig1.jpg' align='center' width='34%'>
+<img src='./1989SMFig1.jpg' align='center' width='34%'><br>
 
 <div align='center'>図 Seidenberg et al (1989)</div>
 
@@ -65,3 +67,15 @@ WBAIとしては基本的には、以下の要件を満たすことにする。
 - 意味失読については，動物と非動物の二重乖離の再現
 - 音韻失読と表層失読については，一貫語，非一貫語の区別，実在語，非実在語の成績の再現
 
+# 文献
+
+- Lichtheim, Ludwig. 1885. “On Aphasia.” Brain, 433–84.
+- Seidenberg, Mark S., and James L. McClelland. 1989. “A Distributed, Developmental Model of Word Recognition and Naming.” Psychological Review 96 (4): 523–68.
+
+## 注1: 一貫語と非一貫語
+一貫語:多くの単語と文字と読みの規則が一致する単語。例:make, cake, lake,take..の ‘a’
+非一貫語:文字と読みの規則が他の多く単語と一致しない単語。例:cat の ‘a’
+
+## 注2: 二重乖離の原則
+一方の認知機能Aが正常に保たれていて，他方の認知機能Bだけが選択的に障害を示す患者がいることに加えて，反対に認知機能Aだけに障害を示し，認知機能Bは正常の範囲である別の患者が存在する場合，この2つの認知機能  A と B とは二重に乖離している double dissociattion という。神経心理学の原則の一つ
+深層失読では、動物カテゴリーの語に関する障害と非動物カテゴリーの語に関する障害の間の二重乖離を問題にする。
