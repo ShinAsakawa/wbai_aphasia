@@ -1,5 +1,6 @@
 # wbai_aphasia
-![WBA失語症ハンズオン「ことばの障害と脳」募集案内](https://wba-initiative.org/3163/)
+
+[WBA失語症ハンズオン「ことばの障害と脳」募集案内](https://wba-initiative.org/3163/)
 
 WBAI (Whole Brain Architecture Initiative) Aphaisa Handson which will held at 17/Sep/2018
 
