@@ -8,4 +8,4 @@ setup(name='wbai_aphasia',
       url='https://github.com/ShinAsakawa/wbai_aphasia',
       download_url='https://github.com/ShinAsakawa/wbai_aphasia/',
       license='Apache 2.0',
-      })
+      )
