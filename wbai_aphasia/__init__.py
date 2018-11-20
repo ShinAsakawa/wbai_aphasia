@@ -10,8 +10,9 @@ from .utils import txt2data, one_hot_vector
 from .utils import make_dict, build_dataset, one_hot_vector
 from .utils import log_loss, binary_log_loss
 from .utils import cost, accuracy, log_loss, binary_log_loss
+from .xerion import xerion
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 __author__ = 'Shin Asakawa'
 __license__ = 'Apache License, Version 2.0'
 __email__ = 'asakawa@ieee.org'
