@@ -1,61 +1,48 @@
----
-title: 'Colaboratory -- Google'
----
-
 # [![Google](https://www.google.com/images/logos/google_logo_41.png)](https://www.google.com/)
 
-## Local runtimes
+## ローカルランタイム Local runtimes
 
-Colaboratory lets you connect to a local runtime using Jupyter. This
-allows you to execute code on your local hardware and have access to
-your local file system.
+コラボラトリではジュピター (Jupyter) を用いることでローカルランタイムに接続します。すなわち，ローカルのハードウェア上でコードを実行し，ローカルファイルにアクセスすることができます。
 
-## Security considerations
+## セキュリティ問題
 
-Make sure you trust the authors of any notebook before executing it.
-With a local connection, the code you execute can read, write, and
-delete files on your computer.
+実行する前にノートブックの作者が信頼できることを確認しておいてください。
+コラボラトリがローカル資源と接続すれば，ローカルコンピュータ上で実行可能なコードの読み，書き，削除が可能になります。
 
-Connecting to a Jupyter notebook server running on your local machine
-can provide many benefits. With these benefits come serious potential
-risks. By connecting to a local runtime, you are allowing the
-Colaboratory frontend to execute code in the notebook using the local
-resources on your machine. This means that the notebook could:
+ローカルマシンで動作しているジュピターノートブックに接続すると便宜が得られる一方，リスクも存在します。
+ローカルな資源と接続すると，ノートブックのコードを実行するコラボラトリはお使いの PC の計算資源を消費します。
+これによりノートブックから次のようなことが可能になります。
 
--   Invoke arbitrary commands (i.e. \"`rm -rf /`\")
--   Access the local file system
--   Run malicious content on your machine
+- 任意のコマンドの呼び出し (たとえば `rm -rf /`)
+- ローカルファイルへのアクセス
+- 悪意あるコンテンツの実行
 
-Before attempting to connect to a local runtime, make sure you trust the
-authors of the notebook and ensure you understand what code is being
-executed. For more information on the Jupyter notebook server\'s
-security model, consult [Jupyter\'s documentation](http://jupyter-notebook.readthedocs.io/en/stable/security.html).
+ローカルランタイムに接続しようとする前に、あなたがノートブックの作者を信頼し、どのコードが実行されているのか理解していることを確認してください。
+ジュピターノートブックサーバーのセキュリティモデルの詳細については、[Jupyter\'s documentation](http://jupyter-notebook.readthedocs.io/en/stable/security.html) を参照してください。
 
-## Setup instructions
+## セットアップ
 
-In order to allow Colaboratory to connect to your locally running
-Jupyter server, you\'ll need to perform the following steps.
+コラボラトリをローカルで実行されているジュピターサーバに接続するためには，以下の手順が必要になります。
 
-### Step 1: Install Jupyter
+### ステップ 1: ジュピターのインストール
 
-Install [Jupyter](http://jupyter.org/install) on your local machine.
+ご自身のマシンにジュピター [Jupyter](http://jupyter.org/install) をインストール
 
-### Step 2: Install and enable the `jupyter_http_over_ws` jupyter extension (one-time)
+### ステップ 2: ジュピター拡張 `jupyter_http_over_ws` のインストールと有効化(一度だけ)
 
-The `jupyter_http_over_ws` extension is authored by the Colaboratory
-team and available on
-[GitHub](https://github.com/googlecolab/jupyter_http_over_ws).
+`jupyter_http_over_ws` 拡張はコラボラトリチームが作成したもので，
+[GitHub](https://github.com/googlecolab/jupyter_http_over_ws) から入手できます。
+以下に手順を示します。
 
 ```bash
 pip install jupyter_http_over_ws
 jupyter serverextension enable --py jupyter_http_over_ws
 ```
 
-### Step 3: Start server and authenticate
+### ステップ 3: サーバの起動と認証
 
-New notebook servers are started normally, though you will need to set a
-flag to explicitly trust WebSocket connections from the Colaboratory
-frontend.
+次のようにコラボラトリのフロントエンドから webSocket コネクションを明示的にセットすることで
+新ノートブックサーバを通常どおり起動します:
 
 ```bash
 jupyter notebook \
@@ -64,68 +51,48 @@ jupyter notebook \
   --NotebookApp.port_retries=0
 ```
 
-Make note of the port that you start your Jupyter notebook server with
-as you\'ll need to provide this in the next step.
+上記で用いたポート番号は次のステップで使用します
 
-### Step 4: Connect to the local runtime
+### ステップ 4: ローカルランタイムに接続する
 
-If you started your Jupyter notebook server with the `--no-browser`
-flag, you may need to visit the URL printed in the console before
-connecting from Colab. This URL sets a browser cookie used for
-authentication between the browser and the Jupyter notebook server.
+ジュピターノートブックを `--no-browser` オプション付きで起動した場合，コラボラトリを接続する前に URL にアクセスする必要がある場合があります。
+この URL はブラウザとコラボラトリ間の認証用にクッキーを設定します。
 
-In Colaboratory, click the \"Connect\" button and select \"Connect to
-local runtime\...\". Enter the port from the previous step in the dialog
-that appears and click the \"Connect\" button. After this, you should
-now be connected to your local runtime.
+コラボラトリから，`Connect` をボタンをクリックし，次に `Connect to local runtime...` を選択します。
+表示されるダイアログボックスで，ステップ 3 で指定したポート番号を入力し，`Connect` ボタンを押下します。
+これでコラボラトリはローカルランタイムに接続されます。
 
-Browser-specific settings
--------------------------
 
-Note: If you\'re using Mozilla Firefox, you\'ll need to set
-the`network.websocket.allowInsecureFromHTTPS` preference within the
-[Firefox config
-editor](https://support.mozilla.org/en-US/kb/about-config-editor-firefox).
-Colaboratory makes a connection to your local kernel using a WebSocket.
-By default, Firefox disallows connections from HTTPS domains using
-standard WebSockets.
+## ブラウザ固有の設定
 
-Sharing
--------
+注: Mozilla Firefox をお使いならば，[Firefox config editor](https://support.mozilla.org/en-US/kb/about-config-editor-firefox) 内の設定 `network.websocket.allowInsecureFromHTTPS` をする必要があります。
+コラボラトリはローカルカーネルと WebSocket を使って接続を試みます。 Firebox はデフォルトでは HTTPS ドメインからの WebScoket 接続を許可していません。
 
-If you share your notebook with others, the runtime on your local
-machine will not be shared. When others open the shared notebook, they
-will be connected to a standard Cloud runtime by default.
+## 共有
 
-By default, all code cell outputs are stored in Google Drive. If your
-local connection will access sensitive data and you would like to omit
-code cell outputs, select *Edit \> Notebook settings \> Omit code cell
-output when saving this notebook*.
+ノートブックを他人と共有した場合，ローカルマシン上のランタイムは共有されます。
+他の人がノートブックを開いた場合には通常クラウド上のランタイムに接続されます。
 
-Connecting to a runtime on a Google Compute Engine instance
------------------------------------------------------------
+デフォルトでは全てのコードセルの出力はグーグルドライブに保存されます。
+ローカルな機密情報をアクセスし，コードセルの抑えたければ保存時にノートブックの設定
+「編集 edit」でコードセル出力の抑制を選んでください。
 
-If the Jupyter notebook server you\'d like to connect to is running on
-another machine (e.g. Google Compute Engine instance), you can set up
-SSH local port forwarding to allow Colaboratory to connect to it.
+## グーグル計算エンジンインスタンス (Google Compute Engine instance)上のランタイムに接続する 
 
-Note: Google Cloud Platform provides Deep Learning VM images with
-Colaboratory local backend support preconfigured. Follow the [how-to guides](https://cloud.google.com/deep-learning-vm/docs/) to set up your
-Google Compute Engine instance with local SSH port forwarding. If you
-use these images, skip directly to Step 4: Connect to the local runtime
+もしジュピターノートブックサーバで他のマシン(Google Compute Engine instance など) と接続する場合，コラボラトリに SSH ローカルポートフォワーディングを許可する必要があります。
+
+グーグルクラウドプラットフォームは，コラボラトリのディープラーニング仮想マシンをサポートしています。
+Google Compute Engine instance と SSH 接続するためには [how-to guides](https://cloud.google.com/deep-learning-vm/docs/) を参照してください。
+このイメージを使う場合はステップ 4 へ飛んでください。
 (using port 8888).
 
-First, set up your Jupyter notebook server using the instructions above.
+第一に，上で用いたジュピターノートブックサーバの設定をし，
 
-Second, establish an SSH connection from your local machine to the
-remote instance (e.g. Google Compute Engine instance) and specify the
-\'-L\' flag. For example, to forward port 8888 on your local machine to
-port 8888 on your Google Compute Engine instance, run the following:
+第二に，ローカルマシンから遠隔インスタンス(Google Compute Engine instanceなど)への SSH 接続を `-L` フラグ付きで確立します。
+例えば Google Compute Engine instance の 8888 番ポートで以下のようにします。
 
 ```bash
 gcloud compute ssh --zone YOUR_ZONE YOUR_INSTANCE_NAME -- -L 8888:localhost:8888
 ```
 
-Finally, make the connection within Colaboratory by connecting to the
-forwarded port (follow the same instructions under Step 4: Connect to
-the local runtime).
+最後にコラボラトリ内でポートフォワーディングによるポート(ステップ4で指定したローカルランタイムへの接続で用いた)を用いてください
